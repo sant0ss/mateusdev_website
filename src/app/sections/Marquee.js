@@ -20,8 +20,8 @@ const Marquee = () => {
         <div className="py-3.5 border overflow-hidden bg-[#111111] border-t-[#1f1f1f] border-b-[#1f1f1f]">
             <div className="flex gap-12 marquee-animation whitespace-nowrap">
                 {marqueeItems.map((item) => (
-                    <div className="flex gap-12 leading-[1.6] text-[#5a5a52] tracking-[.2em] items-center uppercase text-[11px] font-extrabold font-syne" key={item.id}>
-                        <span className="text-[10px] text-[#c8f562]">✦</span>
+                    <div className="flex gap-12 leading-[1.6] text-[#9a9a90] tracking-[.2em] items-center uppercase text-[11px] font-extrabold font-syne" key={item.id}>
+                        <span className="text-[10px] text-[#4D9EFF]">✦</span>
                         {item.text}
                     </div>
                 ))}

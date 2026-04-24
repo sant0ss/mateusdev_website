@@ -79,8 +79,8 @@ const Projetos = () => {
             <div className='container m-auto'>
                 <div className="flex md:flex-row flex-col justify-between mb-16 md:items-end items-start reveal">
                     <div>
-                        <div className="text-[10px] tracking-[0.2em] gap-3 flex items-center mb-12 uppercase text-[#c8f562]">
-                            <span className="h-[1px] w-8 block bg-[#c8f562]"></span>
+                        <div className="text-[10px] tracking-[0.2em] gap-3 flex items-center mb-12 uppercase text-[#4D9EFF]">
+                            <span className="h-[1px] w-8 block bg-[#4D9EFF]"></span>
                             Trabalhos selecionados
                         </div>
                         <h2 className="text-[clamp(36px,5vw,64px)] leading-none font-extrabold tracking-[-2px] text-white font-syne mb-5">Projetos</h2>
@@ -94,9 +94,9 @@ const Projetos = () => {
                         <a key={project.id} href={project.link} target='_blank' rel="noopener noreferrer" className={`project-card reveal bg-[#111111] p-10 relative overflow-hidden block border-[#1f1f1f] border ${project.typeCard}`} >
                             <div className='project-img bg-linear-to-r from-[#1a1a1a] to-[#0f0f0f] opacity-50 absolute w-full h-full top-0 left-0'></div>
                             <div className='z-2 relative'>
-                                <div className='text-[11px] mb-8 tracking-[0.15em] text-[#5a5a52]'>0{project.id}</div>                               
+                                <div className='text-[11px] mb-8 tracking-[0.15em] text-[#9a9a90]'>0{project.id}</div>                               
                                 <div className='text-white font-syne font-extrabold tracking-[-1px] mb-3 leading-[1.1em] text-[28px]'>{project.name}</div>
-                                <div className='text-[13px] max-w-[380px] leading-[1.7em] text-[#5a5a52]'>{project.about}</div>
+                                <div className='text-[13px] max-w-[380px] leading-[1.7em] text-[#9a9a90]'>{project.about}</div>
                             </div>
                             <div className='absolute top-8 text-[#e8e8e0] right-8 text-[20px] opacity-30 project-arrow'>↗</div>
                         </a>

@@ -69,7 +69,7 @@ const NavigationMobile = ({ customNavItem = [], isOpen, onClose }) => {
             <div className='flex justify-between items-center'>
                 <div className='flex gap-3'>
                   {socialMedias.map((link) => (
-                    <a target='_blank' className='text-[10px] text-[#5a5a52]' key={link.id} href={link.path}>{link.name}</a>
+                    <a target='_blank' className='text-[10px] text-[#9a9a90]' key={link.id} href={link.path}>{link.name}</a>
                   ))}
                 </div>
                 <Button onClick={onClose} text={"Fale comigo →"} path={"contato"} classCss={'nav-cta'}/>

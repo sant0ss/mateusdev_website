@@ -24,8 +24,8 @@ const Servicos = () => {
         <div name="servicos" className="bg-black md:px-8 lg:px-12 px-5 md:py-30 py-15">
             <div className="container m-auto">
                 <div className="reveal">
-                    <div className="text-[10px] gap-3 tracking-[0.2em] flex items-center mb-12 uppercase text-[#c8f562]">
-                        <span className="h-[1px] w-8 block bg-[#c8f562]"></span>
+                    <div className="text-[10px] gap-3 tracking-[0.2em] flex items-center mb-12 uppercase text-[#4D9EFF]">
+                        <span className="h-[1px] w-8 block bg-[#4D9EFF]"></span>
                         O que eu faço
                     </div>
                     <div>
@@ -35,10 +35,10 @@ const Servicos = () => {
                 <div className="grid md:grid-cols-3 grid-cols-1 gap-[1px] bg-[#1f1f1f]">
                     {services.map((serv) => (
                         <div className="hover:bg-[#111111] reveal py-12 px-9 bg-[#0a0a0a]" key={serv.id}>
-                            <div className="text-[11px] tracking-[0.15em] mb-6.5 text-[#5a5a52]">{serv.id}</div>
+                            <div className="text-[11px] tracking-[0.15em] mb-6.5 text-[#9a9a90]">{serv.id}</div>
                             <div className="mb-5 text-[32px]">{serv.icon}</div>
                             <div className="font-extrabold text-[22px] font-syne mb-3.5 tracking-[-0.5px] text-white">{serv.name}</div>
-                            <div className="text-[#5a5a52] text-[13px] leading-[1.8em]">{serv.description}</div>
+                            <div className="text-[#9a9a90] text-[13px] leading-[1.8em]">{serv.description}</div>
                         </div>
                     ))}
                 </div>

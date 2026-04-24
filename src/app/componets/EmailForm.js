@@ -97,10 +97,10 @@ export default function EmailForm() {
             ✓
           </div>
           <div>
-            <p className=" text-[13px] mb-1" style={{ color: "#5a5a52" }}>
+            <p className=" text-[13px] mb-1" style={{ color: "#9a9a90" }}>
               Mensagem enviada com sucesso!
             </p>
-            <p className="text-[11px] leading-relaxed" style={{ color: "#5a5a52" }}>
+            <p className="text-[11px] leading-relaxed" style={{ color: "#9a9a90" }}>
               Recebi seu contato e responderei em até 24h.
             </p>
           </div>
@@ -109,7 +109,7 @@ export default function EmailForm() {
         <button
           onClick={handleReset}
           className="self-start text-[12px] uppercase tracking-[0.08em] font-bold font-syne py-3 px-6"
-          style={{ background: "#1f1f1f", color: "#5a5a52" }}
+          style={{ background: "#1f1f1f", color: "#9a9a90" }}
         >
           Enviar outra mensagem
         </button>
@@ -210,13 +210,13 @@ export default function EmailForm() {
           className="form-btn self-start font-bold font-syne text-[13px] uppercase tracking-[0.05em] border-0"
           style={{
             background: isLoading ? "#3a3a32" : "#0a0a0a",
-            color:      isLoading ? "#5a5a52" : "#c8f562",
+            color:      isLoading ? "#9a9a90" : "#4D9EFF",
             padding:    "14px 32px",
             minWidth:   160,
           }}
         >
           {isLoading ? (
-            <BeatLoader color="#c8f562" size={6} loading />
+            <BeatLoader color="#4D9EFF" size={6} loading />
           ) : (
             "Enviar mensagem →"
           )}

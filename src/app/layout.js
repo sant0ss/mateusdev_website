@@ -15,9 +15,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel='icon' href='/favicon.svg' />
       </head>
-      <body className='font-mono' suppressHydrationWarning>
-        {children}
-      </body>
+      <body className='font-mono' suppressHydrationWarning>{children}</body>
     </html>
-  );
+  )
 }

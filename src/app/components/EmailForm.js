@@ -98,10 +98,10 @@ export default function EmailForm() {
             ✓
           </div>
           <div>
-            <p className=" text-[13px] mb-1" style={{ color: "#5a5a52" }}>
+            <p className=" text-[13px] mb-1" style={{ color: "#9a9a90" }}>
               Mensagem enviada com sucesso!
             </p>
-            <p className="text-[11px] leading-relaxed" style={{ color: "#5a5a52" }}>
+            <p className="text-[11px] leading-relaxed" style={{ color: "#9a9a90" }}>
               Recebi seu contato e responderei em até 24h.
             </p>
           </div>
@@ -110,7 +110,7 @@ export default function EmailForm() {
         <button
           onClick={handleReset}
           className="self-start text-[12px] uppercase tracking-[0.08em] font-bold font-syne py-3 px-6"
-          style={{ background: "#1f1f1f", color: "#5a5a52" }}
+          style={{ background: "#1f1f1f", color: "#9a9a90" }}
         >
           Enviar outra mensagem
         </button>
@@ -152,8 +152,8 @@ export default function EmailForm() {
           const isOk     = touched[field.id] && !errors[field.id] && values[field.id];
 
           const baseStyle = {
-            background:   hasError ? "rgba(226,75,74,0.06)" : isOk ? "rgba(99,153,34,0.06)" : "rgba(0,0,0,0.08)",
-            border:       `1px solid ${hasError ? "#A32D2D" : isOk ? "#3B6D11" : "rgba(0,0,0,0.15)"}`,
+            background:   hasError ? "rgba(226,75,74,0.06)" : isOk ? "rgba(99,153,34,0.06)" : "rgba(255, 255, 255, 0.04)",
+            border:       `1px solid ${hasError ? "#A32D2D" : isOk ? "#3B6D11" : "#1e3a5c"}`,
             transition:   "border-color 0.2s, background 0.2s",
           };
 
@@ -162,13 +162,13 @@ export default function EmailForm() {
             placeholder: field.placeholder,
             onChange:    (e) => handleChange(field.id, e.target.value),
             onBlur:      () => handleBlur(field.id),
-            className:   "py-3.5 px-4 text-[14px] font-mono text-[#0a0a0a] w-full outline-none resize-none",
+            className:   "py-3.5 px-4 text-[14px] font-mono text-[#f0f0ea] w-full outline-none resize-none",
             style:       baseStyle,
           };
 
           return (
             <div key={field.id} className="flex flex-col gap-1.5">
-              <label className="text-[11px] uppercase tracking-[0.15em] text-[rgba(0,0,0,0.5)]">
+              <label className="text-[11px] uppercase tracking-[0.15em] text-[#9a9a90]">
                 {field.label}
               </label>
 
@@ -211,13 +211,13 @@ export default function EmailForm() {
           className="form-btn self-start font-bold font-syne text-[13px] uppercase tracking-[0.05em] border-0"
           style={{
             background: isLoading ? "#3a3a32" : "#0a0a0a",
-            color:      isLoading ? "#5a5a52" : "#c8f562",
+            color:      isLoading ? "#9a9a90" : "#4D9EFF",
             padding:    "14px 32px",
             minWidth:   160,
           }}
         >
           {isLoading ? (
-            <BeatLoader color="#c8f562" size={6} loading />
+            <BeatLoader color="#4D9EFF" size={6} loading />
           ) : (
             "Enviar mensagem →"
           )}

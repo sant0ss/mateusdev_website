@@ -47,29 +47,29 @@ const Sobre = () => {
                     <div>
                         <Image src={profileImage}alt="Profile"width={1000} height={1000} />                
                     </div>
-                    <div className="top-0 left-0 absolute px-4.5 py-2.5 leading-[1.6em] tracking-[0.03em] text-[12px] font-bold font-syne text-[#0a0a0a] bg-[#c8f562]">Full Stack</div>
-                    <div className="bottom-0 right-0 absolute px-4.5 py-2.5 tracking-[0.03em] text-[12px] font-bold font-syne text-[#0a0a0a] bg-[#c8f562]">Disponível ✓</div>
+                    <div className="top-0 left-0 absolute px-4.5 py-2.5 leading-[1.6em] tracking-[0.03em] text-[12px] font-bold font-syne text-[#0a0a0a] bg-[#4D9EFF]">Full Stack</div>
+                    <div className="bottom-0 right-0 absolute px-4.5 py-2.5 tracking-[0.03em] text-[12px] font-bold font-syne text-[#0a0a0a] bg-[#4D9EFF]">Disponível ✓</div>
                 </div>
                 <div className="reveal">
-                    <div className="text-[10px] gap-3 tracking-[0.2em] flex items-center mb-12 uppercase text-[#c8f562]">
-                        <span className="h-[1px] w-8 block bg-[#c8f562]"></span>
+                    <div className="text-[10px] gap-3 tracking-[0.2em] flex items-center mb-12 uppercase text-[#4D9EFF]">
+                        <span className="h-[1px] w-8 block bg-[#4D9EFF]"></span>
                         Quem sou eu
                     </div>
                     <div>
                         <h2 className="text-white font-extrabold leading-[1em] mb-5 tracking-[-2px] font-syne text-[clamp(36px,5vw,64px)]">Sobre mim</h2>
                     </div>
                     <div>
-                        <p className="text-[15px] mb-5 leading-[1.9em] text-[#5a5a52]">Olá! Sou um <strong className="text-[17px] text-white font-instrument italic">desenvolvedor web apaixonado</strong> por criar produtos digitais que realmente funcionam — bonitos por fora, sólidos por dentro.</p>
-                        <p className="text-[15px] mb-5 leading-[1.9em] text-[#5a5a52]">Trabalho com o ciclo completo de desenvolvimento, desde a conversa inicial com o cliente até o deploy em produção. Cada projeto recebe atenção total.</p>
+                        <p className="text-[15px] mb-5 leading-[1.9em] text-[#9a9a90]">Olá! Sou um <strong className="text-[17px] text-white font-instrument italic">desenvolvedor web apaixonado</strong> por criar produtos digitais que realmente funcionam — bonitos por fora, sólidos por dentro.</p>
+                        <p className="text-[15px] mb-5 leading-[1.9em] text-[#9a9a90]">Trabalho com o ciclo completo de desenvolvimento, desde a conversa inicial com o cliente até o deploy em produção. Cada projeto recebe atenção total.</p>
                     </div>
                     <div className="mt-10">
                         {skills.map((skill) => (                            
                             <div className="border-t border-b border-[#1f1f1f] flex items-center gap-4 py-3.5 " key={skill.id}>
-                                <span className="text-[12px] uppercase tracking-widest shrink-0 text-[#5a5a52]">{skill.name}</span>
+                                <span className="text-[12px] uppercase tracking-widest shrink-0 text-[#9a9a90]">{skill.name}</span>
                                 <div className="h-[2px] relative bg-[#1f1f1f] flex-1">
-                                    <div className="skill-fill h-full bg-[#c8f562]" data-width={skill.porcentagem / 100} style={{ width: `${skill.porcentagem}%` }}></div>                            
+                                    <div className="skill-fill h-full bg-[#4D9EFF]" data-width={skill.porcentagem / 100} style={{ width: `${skill.porcentagem}%` }}></div>                            
                                 </div>
-                                <span className="text-[11px] text-right shrink-0 text-[#5a5a52]">{skill.porcentagem}%</span>
+                                <span className="text-[11px] text-right shrink-0 text-[#9a9a90]">{skill.porcentagem}%</span>
                             </div>
                         ))}
                     </div>
