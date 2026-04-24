@@ -78,7 +78,7 @@ html { scroll-behavior: smooth; }
 }
 
 .nav-cta:hover { 
-    background: #d8ff70; 
+    background: #6eb0ff; 
     transform: translateY(-1px); 
 }
 
@@ -151,7 +151,7 @@ html { scroll-behavior: smooth; }
     transition: border-color 0.2s, transform 0.15s;
 }
 
-.btn-primary:hover { transform: translate(-2px,-2px); background: #d8ff70; }
+.btn-primary:hover { transform: translate(-2px,-2px); background: #6eb0ff; }
 .btn-secondary:hover { border-color: var(--accent); transform: translate(-2px,-2px); }
 
 .reveal {
