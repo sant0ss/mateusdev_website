@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='pt-BR' className={`${dmMono.variable} ${syne.variable} ${instrumentSerif.variable}`}>
       <head>
-        <link rel='icon' href='/favicon.svg' />
+        <link rel='icon' href='/favicon.ico' />
       </head>
       <body className='font-mono' suppressHydrationWarning>{children}</body>
     </html>
